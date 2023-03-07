@@ -1,5 +1,8 @@
-console.log("Hello");
+const supervillains = require('supervillains');
 
-const fs = require('fs');
+var mySuperHero = supervillains.all;
 
-fs.copyFileSync("file1.txt", "file2.txt");
+for(var i = 0; i < 10; i++){
+    var k = Math.floor(Math.random() * (600 - 1 + 1)) + 1;
+    console.log(mySuperHero[k]);
+}
